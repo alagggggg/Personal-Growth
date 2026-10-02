@@ -1,0 +1,4 @@
+<resources>
+ <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar"><item name="android:fontFamily">sans</item><item name="android:colorAccent">#1976E9</item><item name="android:statusBarColor">#F5F6F9</item><item name="android:navigationBarColor">#FFFFFF</item></style>
+ <style name="CropTheme" parent="android:style/Theme.Material.Light.NoActionBar"><item name="android:statusBarColor">#05070A</item><item name="android:navigationBarColor">#05070A</item><item name="android:windowLightStatusBar">false</item></style>
+</resources>
