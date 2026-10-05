@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/widget_header"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/widget_header_background"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <Button
+            android:id="@+id/widget_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:background="@drawable/widget_add_background"
+            android:text="+"
+            android:textAllCaps="false"
+            android:textColor="#1477EA"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Growth"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:maxLines="1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 hồ sơ cập nhật gần nhất"
+                android:textColor="#DCEEFF"
+                android:textSize="8sp"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/count_new" android:layout_width="48dp" android:layout_height="match_parent" android:gravity="center" android:maxLines="2" android:text="0\nMới" android:textColor="#FFFFFF" android:textSize="9sp" android:textStyle="bold" />
+        <TextView android:id="@+id/count_processing" android:layout_width="48dp" android:layout_height="match_parent" android:gravity="center" android:maxLines="2" android:text="0\nXử lý" android:textColor="#FFFFFF" android:textSize="9sp" android:textStyle="bold" />
+        <TextView android:id="@+id/count_done" android:layout_width="52dp" android:layout_height="match_parent" android:gravity="center" android:maxLines="2" android:text="0\nHoàn tất" android:textColor="#FFFFFF" android:textSize="9sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/row1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="6dp" android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/widget_row_background" android:paddingStart="8dp" android:paddingEnd="8dp">
+        <LinearLayout android:id="@+id/accent1" android:layout_width="4dp" android:layout_height="32dp" android:background="#1477EA" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center_vertical" android:paddingStart="8dp" android:paddingEnd="6dp">
+            <TextView android:id="@+id/title1" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:ellipsize="end" android:text="Chưa có hồ sơ" android:textColor="#182334" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:id="@+id/meta1" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:ellipsize="end" android:text="Nhấn + để ghi nhận" android:textColor="#738095" android:textSize="8sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="72dp" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_vertical|end">
+            <TextView android:id="@+id/status1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:background="@drawable/widget_status_background" android:maxLines="1" android:text="" android:textColor="#1477EA" android:textSize="8sp" android:textStyle="bold" />
+            <TextView android:id="@+id/dots1" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="end" android:maxLines="1" android:text="" android:textColor="#1477EA" android:textSize="8sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/row2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="5dp" android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/widget_row_background" android:paddingStart="8dp" android:paddingEnd="8dp">
+        <LinearLayout android:id="@+id/accent2" android:layout_width="4dp" android:layout_height="32dp" android:background="#8B5CF6" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center_vertical" android:paddingStart="8dp" android:paddingEnd="6dp">
+            <TextView android:id="@+id/title2" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:ellipsize="end" android:text="" android:textColor="#182334" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:id="@+id/meta2" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:ellipsize="end" android:text="" android:textColor="#738095" android:textSize="8sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="72dp" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_vertical|end">
+            <TextView android:id="@+id/status2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:background="@drawable/widget_status_background" android:maxLines="1" android:text="" android:textColor="#1477EA" android:textSize="8sp" android:textStyle="bold" />
+            <TextView android:id="@+id/dots2" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="end" android:maxLines="1" android:text="" android:textColor="#1477EA" android:textSize="8sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/row3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="5dp" android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/widget_row_background" android:paddingStart="8dp" android:paddingEnd="8dp">
+        <LinearLayout android:id="@+id/accent3" android:layout_width="4dp" android:layout_height="32dp" android:background="#22A06B" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center_vertical" android:paddingStart="8dp" android:paddingEnd="6dp">
+            <TextView android:id="@+id/title3" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:ellipsize="end" android:text="" android:textColor="#182334" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:id="@+id/meta3" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:ellipsize="end" android:text="" android:textColor="#738095" android:textSize="8sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="72dp" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_vertical|end">
+            <TextView android:id="@+id/status3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:background="@drawable/widget_status_background" android:maxLines="1" android:text="" android:textColor="#1477EA" android:textSize="8sp" android:textStyle="bold" />
+            <TextView android:id="@+id/dots3" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="end" android:maxLines="1" android:text="" android:textColor="#1477EA" android:textSize="8sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

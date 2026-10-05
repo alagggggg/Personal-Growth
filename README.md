@@ -32,3 +32,10 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Workflow tự tìm thư mục chứa settings.gradle.
 - Kiểm tra từng tệp và hiển thị rõ OK/MISSING.
 - Tự chuẩn hóa tên file HTML trong assets thành index.html nếu cần.
+
+
+### V8.3.2 - Widget hiện đại
+- Thanh tiêu đề chuyển sang gradient xanh, có tên ứng dụng và thống kê 3 trạng thái.
+- Ba hồ sơ gần đây hiển thị dạng thẻ bo góc, có dải màu nhóm, trạng thái dạng nhãn và mức độ ở bên phải.
+- Tên nhóm và địa điểm dùng tên đầy đủ, tự rút gọn khi dài.
+- Giữ RemoteViews thuần để tương thích HiOS Launcher.
