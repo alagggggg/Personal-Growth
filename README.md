@@ -52,3 +52,24 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Bỏ thanh tiến độ sáu đoạn phía dưới thẻ Hồ sơ gần đây trong ứng dụng.
 - Giữ sáu dấu chấm tiến độ ở bên phải dòng thông tin.
 - Widget vẫn giữ bố cục sáu dấu chấm, không có thanh dưới.
+
+
+### V8.3.8
+- Widget dùng hàng cố định để HiOS luôn hiển thị đủ dòng thứ hai.
+- Dòng thứ hai gồm tên nhóm, địa điểm, thời gian dd/MM/yy · HH:mm và sáu dấu chấm tiến độ.
+- Biểu tượng nhóm chuyển sang emoji giống giao diện Ghi nhận.
+- Dải màu trái tiếp tục thể hiện mức độ ban đầu.
+
+
+### V8.3.9
+- Đồng bộ typography và bố cục giữa Hồ sơ gần đây trong Ghi nhận và widget.
+- Tăng cỡ chữ widget: tiêu đề 10sp, nhóm/địa điểm 8sp, thời gian 7sp, sáu dấu chấm 8sp.
+- Trang Ghi nhận dùng title 24px, subtitle ngắn, ô tìm kiếm 42px và thẻ hồ sơ gần đây gọn hơn.
+- Thêm màn hình tải tối giản và tooltip cho nút chế độ sáng/tối, cài đặt.
+
+
+### V8.4.0
+- Thêm Người liên quan vào dòng thông tin của Hồ sơ gần đây và widget.
+- Thứ tự hiển thị: Nhóm · 👤 Người liên quan · Địa điểm.
+- Nếu hồ sơ không có Người liên quan, giao diện tự bỏ phần này và giữ bố cục cũ.
+- Giữ ngày giờ và sáu dấu chấm tiến độ ở bên phải.
