@@ -34,8 +34,13 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Tự chuẩn hóa tên file HTML trong assets thành index.html nếu cần.
 
 
-### V8.3.2 - Widget hiện đại
-- Thanh tiêu đề chuyển sang gradient xanh, có tên ứng dụng và thống kê 3 trạng thái.
-- Ba hồ sơ gần đây hiển thị dạng thẻ bo góc, có dải màu nhóm, trạng thái dạng nhãn và mức độ ở bên phải.
-- Tên nhóm và địa điểm dùng tên đầy đủ, tự rút gọn khi dài.
-- Giữ RemoteViews thuần để tương thích HiOS Launcher.
+### V8.3.3
+- Khôi phục JSON dùng trình chọn tệp Android native và nhận thêm application/json, text/plain, application/octet-stream.
+- Widget hiện đại hơn, thêm thời gian cập nhật và biểu tượng Vấn đề/Sự kiện.
+- Nút + trên widget mở thẳng giao diện tạo hồ sơ mới.
+
+
+### V8.3.4
+- Biểu tượng minh họa theo nhóm được đặt ngay bên trái tên hồ sơ.
+- Dòng thứ hai hiển thị nhóm và địa điểm bên trái; thời gian cập nhật cùng mức độ được đặt bên phải trên cùng một dòng.
+- Giữ khôi phục JSON native và nút + mở thẳng biểu mẫu tạo hồ sơ.
