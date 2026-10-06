@@ -34,13 +34,21 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Tự chuẩn hóa tên file HTML trong assets thành index.html nếu cần.
 
 
-### V8.3.3
-- Khôi phục JSON dùng trình chọn tệp Android native và nhận thêm application/json, text/plain, application/octet-stream.
-- Widget hiện đại hơn, thêm thời gian cập nhật và biểu tượng Vấn đề/Sự kiện.
-- Nút + trên widget mở thẳng giao diện tạo hồ sơ mới.
+### V8.3.5
+- Sáu dấu chấm bên phải dòng hai thể hiện tiến độ thực tế theo 6 bước.
+- Dải màu mép trái chỉ thể hiện mức độ ban đầu: 1 xám, 2 xanh nhạt, 3 vàng, 4 cam, 5 đỏ.
+- Không dùng thanh tiến độ dưới cùng.
+- Biểu tượng nhóm nằm bên trái tên hồ sơ; giữ khôi phục JSON native và nút + mở biểu mẫu mới.
 
 
-### V8.3.4
-- Biểu tượng minh họa theo nhóm được đặt ngay bên trái tên hồ sơ.
-- Dòng thứ hai hiển thị nhóm và địa điểm bên trái; thời gian cập nhật cùng mức độ được đặt bên phải trên cùng một dòng.
-- Giữ khôi phục JSON native và nút + mở thẳng biểu mẫu tạo hồ sơ.
+### V8.3.6
+- Phần Hồ sơ gần đây trong giao diện Ghi nhận được thiết kế lại đồng bộ với ngôn ngữ thẻ của widget.
+- Biểu tượng nhóm nằm bên trái tiêu đề; dải màu trái thể hiện mức độ ban đầu.
+- Dòng thứ hai hiển thị nhóm, địa điểm, thời gian cập nhật và 6 dấu chấm tiến độ.
+- Thẻ trong ứng dụng có thêm thanh 6 đoạn ở cạnh dưới theo bố cục minh họa; widget vẫn giữ quy tắc không có thanh dưới.
+
+
+### V8.3.7
+- Bỏ thanh tiến độ sáu đoạn phía dưới thẻ Hồ sơ gần đây trong ứng dụng.
+- Giữ sáu dấu chấm tiến độ ở bên phải dòng thông tin.
+- Widget vẫn giữ bố cục sáu dấu chấm, không có thanh dưới.
