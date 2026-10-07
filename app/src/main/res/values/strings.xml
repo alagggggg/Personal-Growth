@@ -1,0 +1,5 @@
+<resources>
+ <string name="app_name">Daily Time</string>
+ <string name="widget_name">Daily Time</string>
+ <string name="widget_description">10 hoạt động Times và Timing</string>
+</resources>
