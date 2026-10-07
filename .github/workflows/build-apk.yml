@@ -103,12 +103,12 @@ jobs:
 
       - name: Rename APK
         shell: bash
-        run: cp app/build/outputs/apk/debug/app-debug.apk NhatKyCaiTien-V8.4.0-debug.apk
+        run: cp app/build/outputs/apk/debug/app-debug.apk NhatKyCaiTien-V8.4.1-debug.apk
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: NhatKyCaiTien-V8.4.0-APK
-          path: NhatKyCaiTien-V8.4.0-debug.apk
+          name: NhatKyCaiTien-V8.4.1-APK
+          path: NhatKyCaiTien-V8.4.1-debug.apk
           if-no-files-found: error
           retention-days: 30
