@@ -108,3 +108,12 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Sau kiểm thử mở lại ứng dụng, thay cơ chế chọn toàn bộ nguồn bằng hợp nhất từng hồ sơ theo ID.
 - Với mỗi hồ sơ, bản có updatedAt mới hơn được giữ; hồ sơ khác có thời gian mới hơn không thể che mất cập nhật từ widget.
 - Sắp xếp lại danh sách theo thời gian cập nhật sau khi hợp nhất.
+
+
+### V8.4.9
+- Sửa lỗi hồ sơ cũ xuất hiện lại sau Xóa toàn bộ dữ liệu và mở lại ứng dụng.
+- Thêm mốc xóa toàn bộ (clear tombstone) lưu ở cả localStorage và Android SharedPreferences.
+- Khi đọc dữ liệu, mọi hồ sơ có updatedAt cũ hơn hoặc bằng mốc xóa đều bị bỏ qua.
+- Xóa đồng thời dữ liệu đầy đủ, dữ liệu widget và cập nhật widget bằng commit đồng bộ.
+- Tạo hồ sơ mới hoặc khôi phục dữ liệu mới sẽ xóa mốc chặn và chỉ giữ dữ liệu mới.
+- Mỗi lần lưu hồ sơ gắn `_savedAt` nội bộ; dữ liệu mới hoặc dữ liệu khôi phục sau khi xóa được nhận diện mà không cần bỏ mốc xóa.
