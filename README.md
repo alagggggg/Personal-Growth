@@ -110,10 +110,16 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Sắp xếp lại danh sách theo thời gian cập nhật sau khi hợp nhất.
 
 
-### V8.4.9
-- Sửa lỗi hồ sơ cũ xuất hiện lại sau Xóa toàn bộ dữ liệu và mở lại ứng dụng.
-- Thêm mốc xóa toàn bộ (clear tombstone) lưu ở cả localStorage và Android SharedPreferences.
-- Khi đọc dữ liệu, mọi hồ sơ có updatedAt cũ hơn hoặc bằng mốc xóa đều bị bỏ qua.
-- Xóa đồng thời dữ liệu đầy đủ, dữ liệu widget và cập nhật widget bằng commit đồng bộ.
-- Tạo hồ sơ mới hoặc khôi phục dữ liệu mới sẽ xóa mốc chặn và chỉ giữ dữ liệu mới.
-- Mỗi lần lưu hồ sơ gắn `_savedAt` nội bộ; dữ liệu mới hoặc dữ liệu khôi phục sau khi xóa được nhận diện mà không cần bỏ mốc xóa.
+### V8.5.0
+- Bỏ hoàn toàn cơ chế hợp nhất hai nguồn gây hồi sinh dữ liệu cũ và mất cập nhật widget.
+- Android SharedPreferences là nguồn dữ liệu đầy đủ duy nhất; localStorage chỉ là bản sao tương thích.
+- Giá trị [] trong Android là trạng thái xóa hợp lệ và luôn được ưu tiên khi mở lại ứng dụng.
+- Mỗi lần cập nhật từ widget hoặc ứng dụng đều commit toàn bộ hồ sơ vào Android trước khi đồng bộ widget.
+- Dữ liệu cũ chỉ được chuyển từ localStorage sang Android duy nhất khi vùng Android chưa từng có dữ liệu.
+
+
+### V8.5.1
+- Kiểm thử nhiều lần cập nhật liên tiếp từ widget và xác nhận dữ liệu đầy đủ còn nguyên sau khi mở lại ứng dụng.
+- Widget tự đọc lại SharedPreferences và dựng lại sau khi điện thoại khởi động hoàn tất.
+- Widget cũng tự làm mới sau khi APK được cập nhật hoặc cài đè.
+- Giữ nguyên Android SharedPreferences là nguồn dữ liệu chính duy nhất của V8.5.0.
