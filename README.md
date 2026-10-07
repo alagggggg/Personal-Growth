@@ -73,3 +73,9 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Thứ tự hiển thị: Nhóm · 👤 Người liên quan · Địa điểm.
 - Nếu hồ sơ không có Người liên quan, giao diện tự bỏ phần này và giữ bố cục cũ.
 - Giữ ngày giờ và sáu dấu chấm tiến độ ở bên phải.
+
+
+### V8.4.1
+- Gộp ngày giờ và sáu dấu chấm tiến độ thành một vùng sát nhau ở bên phải dòng hai của widget.
+- Dùng định dạng gọn dd/MM/yy·HH:mm và giảm vùng bên phải xuống 108dp.
+- Mở rộng đáng kể không gian cho Nhóm · 👤 Người liên quan · Địa điểm.
