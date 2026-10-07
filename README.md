@@ -88,9 +88,23 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Giữ bộ phân tích JSON chịu lỗi và quy tắc màu đồng bộ của V8.4.2.
 
 
-### V8.4.5
-- Hồ sơ mở từ widget chạy ở chế độ cập nhật nhanh.
-- Sau khi lưu cập nhật, chuyển bước, thêm phương án, đóng hồ sơ hoặc sửa thông tin thành công: đồng bộ widget rồi tự đóng ứng dụng về màn hình chính.
-- Nhấn Xong ở chi tiết mở từ widget cũng trở về màn hình chính.
-- Mở cùng hồ sơ từ bên trong ứng dụng không tự đóng; hành vi thông thường được giữ nguyên.
-- Nếu lưu thất bại, biểu mẫu vẫn mở để tránh mất nội dung.
+### V8.4.6
+- Sửa chênh lệch dữ liệu chi tiết khi mở cùng hồ sơ từ widget và từ giao diện Ghi nhận.
+- Khi mở từ widget, WebView luôn tải mới thay vì khôi phục trạng thái màn hình cũ.
+- Trước khi mở chi tiết, ứng dụng đọc lại hồ sơ đầy đủ từ localStorage; không dùng dữ liệu compact của widget làm dữ liệu chi tiết.
+- Sau khi cập nhật từ widget, giao diện và danh sách được render lại, widget được đồng bộ, sau đó mới đóng task.
+- Khi mở từ ứng dụng, hành vi bình thường và dữ liệu đầy đủ vẫn được giữ.
+
+
+### V8.4.7
+- Sửa triệt để lỗi cập nhật từ widget không xuất hiện khi mở ứng dụng.
+- Mỗi lần lưu ghi đồng thời dữ liệu đầy đủ vào localStorage và Android SharedPreferences bằng commit đồng bộ.
+- Khi mở ứng dụng hoặc mở hồ sơ từ widget, hệ thống chọn bản dữ liệu đầy đủ có updatedAt mới hơn.
+- Dữ liệu compact của widget chỉ dùng để hiển thị, không còn là nguồn dữ liệu cập nhật hồ sơ.
+- Chỉ tự đóng sau khi xác nhận cả hai vùng lưu dữ liệu đều thành công.
+
+
+### V8.4.8
+- Sau kiểm thử mở lại ứng dụng, thay cơ chế chọn toàn bộ nguồn bằng hợp nhất từng hồ sơ theo ID.
+- Với mỗi hồ sơ, bản có updatedAt mới hơn được giữ; hồ sơ khác có thời gian mới hơn không thể che mất cập nhật từ widget.
+- Sắp xếp lại danh sách theo thời gian cập nhật sau khi hợp nhất.
