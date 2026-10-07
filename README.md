@@ -86,3 +86,11 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 ### V8.4.3
 - Bổ sung nhận diện UTF-8 BOM, UTF-16LE và UTF-16BE khi đọc tệp JSON sao lưu.
 - Giữ bộ phân tích JSON chịu lỗi và quy tắc màu đồng bộ của V8.4.2.
+
+
+### V8.4.4
+- Nút + trên widget mở biểu mẫu tạo hồ sơ ở chế độ nhanh.
+- Lưu thành công: đồng bộ widget rồi đóng task, trở về màn hình chính điện thoại.
+- Hủy biểu mẫu: đóng task và trở về màn hình chính, không tạo hồ sơ.
+- Mở biểu mẫu từ bên trong ứng dụng vẫn giữ hành vi cũ, lưu xong tiếp tục ở giao diện Ghi nhận.
+- Lưu thất bại không đóng ứng dụng để tránh mất dữ liệu đang nhập.
