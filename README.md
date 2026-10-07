@@ -123,3 +123,11 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Widget tự đọc lại SharedPreferences và dựng lại sau khi điện thoại khởi động hoàn tất.
 - Widget cũng tự làm mới sau khi APK được cập nhật hoặc cài đè.
 - Giữ nguyên Android SharedPreferences là nguồn dữ liệu chính duy nhất của V8.5.0.
+
+
+### V8.5.2
+- Tách màu Kế hoạch, Thử nghiệm, Đánh giá và Hoàn tất; đồng bộ tuyệt đối giữa widget và Hồ sơ gần đây.
+- Android full data có cờ initialized, ngăn localStorage cũ được chuyển trở lại sau khi đã xóa.
+- Xóa toàn bộ dùng commit đồng bộ cho full data và widget data, đọc lại để xác minh cả hai đều là [].
+- Chỉ xóa giao diện và báo thành công sau khi xác minh Android hoàn tất; nếu thất bại giữ nguyên dữ liệu.
+- Đồng bộ widget chuyển từ apply sang commit để tránh dữ liệu cũ sau khởi động máy.
