@@ -131,3 +131,17 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Xóa toàn bộ dùng commit đồng bộ cho full data và widget data, đọc lại để xác minh cả hai đều là [].
 - Chỉ xóa giao diện và báo thành công sau khi xác minh Android hoàn tất; nếu thất bại giữ nguyên dữ liệu.
 - Đồng bộ widget chuyển từ apply sang commit để tránh dữ liệu cũ sau khởi động máy.
+
+
+#### V8.5.3
+- Sửa lỗi hồ sơ đã xóa xuất hiện lại sau khi đóng và mở ứng dụng.
+- Mọi thao tác xóa từ ứng dụng hoặc màn hình mở qua widget đều lưu đồng thời vào localStorage, Android SharedPreferences và dữ liệu widget.
+- Chỉ cập nhật giao diện sau khi việc ghi dữ liệu chính được xác nhận thành công.
+
+
+#### V8.5.4
+- Rà soát và gia cố đồng bộ widget theo nguồn dữ liệu Android đầy đủ.
+- Lưu dữ liệu đầy đủ và dữ liệu widget trong cùng luồng commit đồng bộ; loại bỏ khoảng trễ runOnUiThread có thể làm widget giữ dữ liệu cũ.
+- Mỗi lần widget cập nhật, dữ liệu hiển thị được dựng lại từ nguồn full data và tự sửa bản compact nếu lệch.
+- Khi khởi động máy, cập nhật/cài đè APK hoặc launcher yêu cầu refresh, widget không còn phụ thuộc vào bản compact cũ.
+- Từ chối payload widget không hợp lệ và chỉ refresh sau khi commit thành công.
