@@ -75,7 +75,14 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Giữ ngày giờ và sáu dấu chấm tiến độ ở bên phải.
 
 
-### V8.4.1
-- Gộp ngày giờ và sáu dấu chấm tiến độ thành một vùng sát nhau ở bên phải dòng hai của widget.
-- Dùng định dạng gọn dd/MM/yy·HH:mm và giảm vùng bên phải xuống 108dp.
-- Mở rộng đáng kể không gian cho Nhóm · 👤 Người liên quan · Địa điểm.
+### V8.4.2
+- Đồng bộ màu chữ trạng thái và sáu dấu chấm ở Ghi nhận với widget.
+- Khôi phục JSON chịu được BOM, ký tự null, JSON lồng và cấu trúc data.cases.
+- Chuẩn hóa hồ sơ trước khi lưu và báo lỗi cụ thể.
+- Khi thiếu bộ nhớ do ảnh, cho phép khôi phục hồ sơ không gồm ảnh.
+- Giữ bố cục widget ngày giờ sát sáu dấu chấm để mở rộng metadata.
+
+
+### V8.4.3
+- Bổ sung nhận diện UTF-8 BOM, UTF-16LE và UTF-16BE khi đọc tệp JSON sao lưu.
+- Giữ bộ phân tích JSON chịu lỗi và quy tắc màu đồng bộ của V8.4.2.
