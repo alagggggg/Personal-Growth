@@ -88,9 +88,9 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Giữ bộ phân tích JSON chịu lỗi và quy tắc màu đồng bộ của V8.4.2.
 
 
-### V8.4.4
-- Nút + trên widget mở biểu mẫu tạo hồ sơ ở chế độ nhanh.
-- Lưu thành công: đồng bộ widget rồi đóng task, trở về màn hình chính điện thoại.
-- Hủy biểu mẫu: đóng task và trở về màn hình chính, không tạo hồ sơ.
-- Mở biểu mẫu từ bên trong ứng dụng vẫn giữ hành vi cũ, lưu xong tiếp tục ở giao diện Ghi nhận.
-- Lưu thất bại không đóng ứng dụng để tránh mất dữ liệu đang nhập.
+### V8.4.5
+- Hồ sơ mở từ widget chạy ở chế độ cập nhật nhanh.
+- Sau khi lưu cập nhật, chuyển bước, thêm phương án, đóng hồ sơ hoặc sửa thông tin thành công: đồng bộ widget rồi tự đóng ứng dụng về màn hình chính.
+- Nhấn Xong ở chi tiết mở từ widget cũng trở về màn hình chính.
+- Mở cùng hồ sơ từ bên trong ứng dụng không tự đóng; hành vi thông thường được giữ nguyên.
+- Nếu lưu thất bại, biểu mẫu vẫn mở để tránh mất nội dung.
