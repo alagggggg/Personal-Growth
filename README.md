@@ -151,3 +151,12 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - report.xlsx chứa đầy đủ dữ liệu hồ sơ, gồm dữ liệu gốc JSON và các sheet chi tiết Updates, Solutions, Final Results, Photos.
 - Nút + trên widget đổi từ hình tròn sang hình chữ nhật bo góc 44dp x 30dp để tăng vùng bấm.
 - Giữ nguyên các phần giao diện khác và cơ chế đồng bộ widget V8.5.4.
+
+
+##### V8.5.7
+- Hoàn thiện gói sao lưu ZIP gồm manifest.json, data.json và report.xlsx.
+- report.xlsx chứa đầy đủ thông tin nghiệp vụ của hồ sơ trong các sheet Full Records, Updates, Solutions, Final Results và Photos.
+- Dữ liệu ảnh dung lượng lớn không nhúng trực tiếp vào ô Excel để tránh giới hạn 32.767 ký tự; ảnh đầy đủ vẫn được giữ nguyên trong data.json và sheet Photos có thông tin loại, kích thước dữ liệu.
+- Tất cả ô Excel được giới hạn an toàn, tránh tệp báo cáo lỗi khi mô tả hoặc JSON quá dài.
+- Giữ nút + widget dạng chữ nhật bo góc 44dp x 30dp và cơ chế đồng bộ full data của V8.5.4.
+- Cập nhật workflow GitHub kiểm tra BackupZip.java và xuất APK đúng tên phiên bản V8.5.7.
