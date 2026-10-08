@@ -162,9 +162,16 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Cập nhật workflow GitHub kiểm tra BackupZip.java và xuất APK đúng tên phiên bản V8.5.7.
 
 
-##### V8.5.8
-- Khi mở ứng dụng từ biểu tượng chính, chế độ xem mặc định là Tất cả thay vì Mới.
-- Sheet Photos trong report.xlsx nhúng ảnh xem trước tương ứng với từng hồ sơ, liên kết bằng Case ID và tiêu đề hồ sơ.
-- Ảnh nhúng được thu nhỏ tối đa 480 px và nén JPEG để giảm kích thước file Excel; ảnh gốc đầy đủ vẫn nằm trong data.json để khôi phục.
-- Ảnh không hợp lệ được ghi trạng thái lỗi riêng, không làm hỏng toàn bộ bản sao lưu.
-- Giữ nguyên nút + widget hình chữ nhật 44dp x 30dp và các cơ chế đồng bộ trước đó.
+##### V8.5.9
+- Chuyển sao lưu và khôi phục hoàn toàn sang một tệp Excel .xlsx, không còn tạo ZIP sao lưu bên ngoài.
+- Sheet Full Records chứa thông tin hồ sơ và các ảnh tương ứng ngay trên cùng hàng; không còn sheet Photos riêng.
+- Nhiều ảnh của cùng hồ sơ được đặt vào các cột Ảnh 1, Ảnh 2, ... trên chính sheet Full Records.
+- Dữ liệu khôi phục đầy đủ được giữ trong sheet ẩn BackupData để người dùng không vô tình chỉnh sửa; ứng dụng khôi phục trực tiếp từ tệp Excel.
+- Sheet Updates, Solutions và Final Results vẫn được giữ để xem, lọc và đối chiếu.
+- Chế độ mở mặc định tiếp tục là Tất cả.
+
+
+###### Kiểm tra hoàn thiện V8.5.9
+- Tệp Excel được tạo và khôi phục thử nội bộ trước khi ghi ra bộ nhớ người dùng.
+- Nếu dữ liệu trong sheet ẩn BackupData không thể đọc lại, thao tác sao lưu dừng và không báo thành công.
+- Sau khi tạo thành công, luồng xuất gọi flush để hoàn tất ghi dữ liệu trước khi thông báo.
