@@ -199,3 +199,14 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Chỉ giữ các lớp RemoteViews chuẩn: LinearLayout và TextView.
 - Giữ nguyên lưới 4×2, dữ liệu hai dòng, metadata rút gọn riêng và sáu dấu chấm cố định.
 - Giữ nguyên đồng bộ Android full data, compact widget và refresh sau lưu/khởi động/cài đè.
+
+######## V8.6.4 - Đồng bộ tên nhóm ngắn
+- Đồng bộ tên nhóm giữa cấu hình CATEGORIES của ứng dụng và hàm category() của widget.
+- Ba tên dài được rút gọn: Quản lý thời gian → Thời gian; Gia đình & sinh hoạt → Sinh hoạt; Công nghệ & thiết bị → Công nghệ.
+- ID nhóm lưu trong dữ liệu không thay đổi nên hồ sơ cũ, bộ lọc, thống kê, sao lưu và khôi phục vẫn hoạt động như trước.
+- Không thay đổi cấu trúc code, hàm xử lý hoặc giao diện khác.
+
+######### V8.6.5 - Rà soát ánh xạ nhóm toàn giao diện
+- Xác nhận 12/12 mã nhóm và tên nhóm khớp giữa ứng dụng và widget.
+- Đồng bộ thêm biểu tượng Tập trung thành 🧠 và Quy trình thành 🛠 để giống cấu hình CATEGORIES của ứng dụng.
+- Giữ nguyên ID nhóm, dữ liệu hồ sơ, cấu trúc code, logic xử lý và các giao diện khác.
