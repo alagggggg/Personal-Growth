@@ -193,3 +193,9 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Dòng 2 tách metadata và sáu dấu chấm thành hai TextView độc lập.
 - Nhóm, người liên quan và địa điểm được ellipsize khi thiếu chỗ.
 - Sáu dấu chấm tiến độ dùng wrap_content, luôn giữ nguyên và không bị rút gọn.
+
+####### V8.6.3 - Widget compatibility fix
+- Đổi nút + từ Button sang TextView có vùng bấm riêng để giảm lỗi inflate RemoteViews trên launcher tùy biến.
+- Chỉ giữ các lớp RemoteViews chuẩn: LinearLayout và TextView.
+- Giữ nguyên lưới 4×2, dữ liệu hai dòng, metadata rút gọn riêng và sáu dấu chấm cố định.
+- Giữ nguyên đồng bộ Android full data, compact widget và refresh sau lưu/khởi động/cài đè.
