@@ -160,3 +160,11 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Tất cả ô Excel được giới hạn an toàn, tránh tệp báo cáo lỗi khi mô tả hoặc JSON quá dài.
 - Giữ nút + widget dạng chữ nhật bo góc 44dp x 30dp và cơ chế đồng bộ full data của V8.5.4.
 - Cập nhật workflow GitHub kiểm tra BackupZip.java và xuất APK đúng tên phiên bản V8.5.7.
+
+
+##### V8.5.8
+- Khi mở ứng dụng từ biểu tượng chính, chế độ xem mặc định là Tất cả thay vì Mới.
+- Sheet Photos trong report.xlsx nhúng ảnh xem trước tương ứng với từng hồ sơ, liên kết bằng Case ID và tiêu đề hồ sơ.
+- Ảnh nhúng được thu nhỏ tối đa 480 px và nén JPEG để giảm kích thước file Excel; ảnh gốc đầy đủ vẫn nằm trong data.json để khôi phục.
+- Ảnh không hợp lệ được ghi trạng thái lỗi riêng, không làm hỏng toàn bộ bản sao lưu.
+- Giữ nguyên nút + widget hình chữ nhật 44dp x 30dp và các cơ chế đồng bộ trước đó.
