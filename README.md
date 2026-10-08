@@ -147,11 +147,7 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Từ chối payload widget không hợp lệ và chỉ refresh sau khi commit thành công.
 
 
-##### V8.5.5
-- Giữ nguyên bố cục và phong cách giao diện hiện tại.
-- Sao lưu thành một gói ZIP gồm manifest.json, data.json và report.xlsx.
-- data.json là nguồn khôi phục đầy đủ; report.xlsx gồm các sheet Overview, Cases, Updates, Solutions và Final Results để xem, lọc và đối chiếu.
-- Khôi phục kiểm tra đồng thời manifest.json, data.json và report.xlsx trước khi thay dữ liệu hiện tại.
-- Chặn đường dẫn ZIP không an toàn, tệp trùng tên và tệp vượt giới hạn; dữ liệu hiện tại vẫn được giữ nếu kiểm tra hoặc lưu thất bại.
-- Tiếp tục đọc được bản sao lưu JSON cũ từ V8.5.4 trở về trước.
-- Sau khi khôi phục thành công, full data và widget được đồng bộ theo cơ chế V8.5.4.
+##### V8.5.6
+- report.xlsx chứa đầy đủ dữ liệu hồ sơ, gồm dữ liệu gốc JSON và các sheet chi tiết Updates, Solutions, Final Results, Photos.
+- Nút + trên widget đổi từ hình tròn sang hình chữ nhật bo góc 44dp x 30dp để tăng vùng bấm.
+- Giữ nguyên các phần giao diện khác và cơ chế đồng bộ widget V8.5.4.
