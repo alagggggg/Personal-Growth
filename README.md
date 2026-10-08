@@ -175,3 +175,21 @@ Bản đầy đủ dành cho Android 14 / HiOS 14.5.
 - Tệp Excel được tạo và khôi phục thử nội bộ trước khi ghi ra bộ nhớ người dùng.
 - Nếu dữ liệu trong sheet ẩn BackupData không thể đọc lại, thao tác sao lưu dừng và không báo thành công.
 - Sau khi tạo thành công, luồng xuất gọi flush để hoàn tất ghi dữ liệu trước khi thông báo.
+
+#### V8.6.0
+- Widget chuyển sang bố cục 4×2 dạng lưới 2 cột × 2 hàng.
+- Ô trên trái gồm nút + và thống kê Mới, Xử lý, Hoàn tất; ba ô còn lại hiển thị tối đa ba hồ sơ mới nhất.
+- Thiết lập minHeight và minResizeHeight là 55dp; thu gọn khoảng cách và cỡ chữ để tránh tràn khung.
+- Giữ nguyên cơ chế đồng bộ, mở hồ sơ, tạo hồ sơ và toàn bộ giao diện khác.
+
+##### V8.6.1
+- Toàn bộ ô thống kê trên trái đều mở giao diện tạo hồ sơ mới.
+- Hồ sơ widget rút gọn còn hai dòng; bỏ dải màu mép trái.
+- Dòng 1: biểu tượng, tiêu đề theo màu severity, thời gian và trạng thái.
+- Dòng 2: nhóm, người liên quan, địa điểm và sáu dấu chấm tiến độ.
+- Giữ nguyên nguồn dữ liệu Android đầy đủ và cơ chế đồng bộ hai chiều.
+
+###### V8.6.2
+- Dòng 2 tách metadata và sáu dấu chấm thành hai TextView độc lập.
+- Nhóm, người liên quan và địa điểm được ellipsize khi thiếu chỗ.
+- Sáu dấu chấm tiến độ dùng wrap_content, luôn giữ nguyên và không bị rút gọn.
